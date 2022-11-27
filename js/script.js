@@ -10,7 +10,7 @@ navLinks.forEach((link) => {
   };
 });
 
-const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelectorAll("a:not(.portab)");
 allLinks.forEach(function (anchor) {
   //specifying that all elements inside allLinks is a link
   //function(link) above. link is function name
