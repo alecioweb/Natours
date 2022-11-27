@@ -1,0 +1,53 @@
+/* ------------------------------------------ */
+/* ------CSS ANIMATIONS ------------------ */
+/* ------------------------------------------ */
+/* MoveInLeft is the name of the animation, a custom name */
+@keyframes MoveInLeft {
+  /* here 0% before the animatin starts */
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  /* 100% is the end  */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes MoveInRight {
+  /* here 0% before the animatin starts */
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  /* 100% is the end  */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes MoveInBottom {
+  /* add animation-fill-mode: backwards; to 
+      initial btn-animated*/
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

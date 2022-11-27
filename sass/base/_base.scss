@@ -1,0 +1,45 @@
+html {
+  // this defines what 1rem should be, that is why it is not in the
+  // typography file
+  font-size: 62.5%; // 1rem = 10px
+
+  // @include respond-phone {
+  //   font-size: 50%;
+  // }
+
+  @include respond(tab-land) {
+    //width < 1200px?
+    font-size: 56.25%; //1rem = 9px
+  }
+
+  @include respond(tab-port) {
+    //width < 900px?
+    font-size: 50%; //1rem = 8px
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
